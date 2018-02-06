@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>arancia.testing.it</groupId>
+  <artifactId>jeetesting</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>my jee testing</name>
+   <modules>
+      <module>sample-ear</module>
+      <module>sample-web</module>
+      <module>sample-services</module>
+      <module>sample-domain</module>
+   </modules>
+
+	<build>
+	  <pluginManagement>
+	     <plugins>
+	        <!-- compiler plugin -->
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-compiler-plugin</artifactId>
+	          <version>3.7.0</version>
+	          <configuration>
+	            <source>1.7</source>
+	            <target>1.7</target>
+	         </configuration>
+	      </plugin>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-ejb-plugin</artifactId>
+	        <version>2.3</version>
+	        <configuration>
+	                <ejbVersion>3.2</ejbVersion>
+	        </configuration>
+		 </plugin>
+	   </plugins>
+	  </pluginManagement>
+	</build>   
+</project>
