@@ -8,4 +8,5 @@
   <artifactId>sample-services</artifactId>
   <packaging>ejb</packaging>
   <name>sample-services</name>
+  <version>1.0</version>
 </project>  

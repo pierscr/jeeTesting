@@ -21,10 +21,12 @@
       <version>1.0</version> 
       <type>war</type> 
   	</dependency>
-<!--   	<dependency>
+   	<dependency>
   		<groupId>arancia.testing.it</groupId>
-  		<artifactId>sample</artifactId>
-  	</dependency> -->
+  		<artifactId>sample-services</artifactId>
+  		<version>1.0</version> 
+      	<type>ejb</type> 
+  	</dependency>
   </dependencies>
   <build>
    <finalName>bah</finalName>
